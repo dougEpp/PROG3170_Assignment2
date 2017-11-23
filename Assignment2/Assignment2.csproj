@@ -185,6 +185,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Review.cs" />
+    <Compile Include="Models\ReviewList.cs" />
     <Compile Include="Models\Song.cs" />
     <Compile Include="Models\SongList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
