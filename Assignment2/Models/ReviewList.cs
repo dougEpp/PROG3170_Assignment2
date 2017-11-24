@@ -34,10 +34,11 @@ namespace Assignment2.Models
 
         public static Review UpdateReview(int ReviewId, Review newReview)
         {
-            int ReviewIndex = reviewList.FindIndex(r => r.ReviewID == ReviewId);
-            if (ReviewIndex != -1)
+            int reviewIndex = reviewList.FindIndex(r => r.ReviewID == ReviewId);
+            if (reviewIndex != -1)
             {
-                reviewList[ReviewIndex] = newReview;
+                reviewList[reviewIndex] = newReview;
+                return reviewList[reviewIndex];
             }
             return null;
 

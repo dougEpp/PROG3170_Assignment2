@@ -23,15 +23,17 @@ namespace Assignment2.Controllers
         }
 
         // POST: api/Reviews
-        public void Post([FromBody] Review newReview)
+        public Review Post([FromBody] Review newReview)
         {
-            ReviewList.AddReview(newReview);
+            Review addedReview = ReviewList.AddReview(newReview);
+            return addedReview;
         }
 
         // PUT: api/Reviews/5
-        public void Put(int id, [FromBody] Review newReview)
+        public Review Put(int id, [FromBody] Review newReview)
         {
-            ReviewList.UpdateReview(id, newReview);
+            Review updatedReview = ReviewList.UpdateReview(id, newReview);
+            return updatedReview;
         }
 
         // DELETE: api/Reviews/5

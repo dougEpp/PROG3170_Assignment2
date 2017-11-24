@@ -23,15 +23,17 @@ namespace Assignment2.Controllers
         }
 
         // POST: api/Songs
-        public void Post([FromBody] Song newSong)
+        public Song Post([FromBody] Song newSong)
         {
-            SongList.AddSong(newSong);
+            Song addedSong = SongList.AddSong(newSong);
+            return addedSong;
         }
 
         // PUT: api/Songs/5
-        public void Put(int id, [FromBody] Song newSong)
+        public Song Put(int id, [FromBody] Song newSong)
         {
-            SongList.UpdateSong(id, newSong);
+            Song updatedSong = SongList.UpdateSong(id, newSong);
+            return updatedSong;
         }
 
         // DELETE: api/Songs/5
