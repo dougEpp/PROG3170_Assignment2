@@ -10,7 +10,9 @@ namespace Assignment2.Models
 
         private static List<Review> reviewList = new List<Review>()
         {
-            new Review{ReviewID = 1, SongId = 1, Message = "Good Song", Rating = 5}
+            new Review{ReviewID = 1, SongId = 1, Message = "Good Song", Rating = 5},
+            new Review{ReviewID = 2, SongId = 4, Message = "Amazing", Rating = 5},
+            new Review{ReviewID = 3, SongId = 6, Message = "It's Okay", Rating = 3}
         };
 
 
